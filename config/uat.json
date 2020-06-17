@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "jtsAuth_jwtPrivateKey_local",
+    "db": "mongodb://192.168.11.12:27017/task"
+}

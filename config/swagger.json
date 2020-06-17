@@ -1,0 +1,3524 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Shark",
+    "description": "TODO: Add Description",
+    "contact": {}
+  },
+  "host": "example.com",
+  "basePath": "/api",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/project/": {
+      "post": {
+        "description": "",
+        "summary": "Add project",
+        "tags": [
+          "Project"
+        ],
+        "operationId": "Addproject",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AddprojectRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Addproject"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "compitative_URL": [],
+                "isActive": true,
+                "isDelete": false,
+                "history": [],
+                "_id": "5e3a51d89bd84e5c5e1df9bf",
+                "name": "kajal",
+                "siteUrl": "aaaa",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": "5e317f1313f3a1608819a573",
+                "createdOn": "2020-02-05T05:25:44.777Z",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "258"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"102-NlA7/T9e+e5Ljqp3Nn6Ndcl3RXQ\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 05:25:44 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "summary": "Update project",
+        "tags": [
+          "Project"
+        ],
+        "operationId": "Updateproject",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateprojectRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Updateproject"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "compitative_URL": [],
+                "isActive": true,
+                "isDelete": false,
+                "history": [],
+                "_id": "5e37f9fbf4ab1437fcf69e02",
+                "name": "vinod1",
+                "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": null,
+                "createdOn": "2020-02-03T10:46:19.181Z",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "497"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"1f1-ldSDt2KZuWS+pXLDMDMxL7lFRSI\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 05:26:40 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Get Project Details",
+        "tags": [
+          "Project"
+        ],
+        "operationId": "GetProjectDetails",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GetProjectDetails"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "compitative_URL": [],
+                "isActive": true,
+                "isDelete": false,
+                "history": [],
+                "_id": "5e37f9fbf4ab1437fcf69e02",
+                "name": "vinod1",
+                "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": null,
+                "createdOn": "2020-02-03T10:46:19.181Z",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "497"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"1f1-ldSDt2KZuWS+pXLDMDMxL7lFRSI\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 05:27:24 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "summary": "Delete oneProject",
+        "tags": [
+          "Project"
+        ],
+        "operationId": "DeleteoneProject",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/DeleteoneProject"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "compitative_URL": [],
+                "isActive": true,
+                "isDelete": false,
+                "history": [],
+                "_id": "5e37f9fbf4ab1437fcf69e02",
+                "name": "vinod1",
+                "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": null,
+                "createdOn": "2020-02-03T10:46:19.181Z",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "497"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"1f1-ldSDt2KZuWS+pXLDMDMxL7lFRSI\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 05:28:22 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/users/login": {
+      "post": {
+        "description": "",
+        "summary": "Login api",
+        "tags": [
+          "User"
+        ],
+        "operationId": "Loginapi",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LoginapiRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Loginapi"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "data": {
+                  "_id": "5e317f1313f3a1608819a573",
+                  "isSuperAdmin": false,
+                  "isActive": true,
+                  "isDelete": false,
+                  "isVerified": false,
+                  "firstName": "kajal",
+                  "lastName": "mahapatra",
+                  "email": "kajal@gmail.com",
+                  "createdAt": "2020-01-29T12:48:19.829Z",
+                  "updatedAt": "2020-01-29T12:48:19.829Z"
+                },
+                "msg": "OK"
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "x-access-token": {
+                "type": "string",
+                "default": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthamFsQGdtYWlsLmNvbSIsIl9pZCI6IjVlMzE3ZjEzMTNmM2ExNjA4ODE5YTU3MyIsImlhdCI6MTU4MDg4MDIwOH0._zYbThBzAQDWmdUKtr6d7jdV8GXgZCWTcytlxr80Ers"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "274"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"112-jzXNBP70Hk2v2zIgIpguTNzA45Y\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 05:23:28 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/country/": {
+      "post": {
+        "description": "",
+        "summary": "Create Country",
+        "tags": [
+          "Country"
+        ],
+        "operationId": "CreateCountry",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateCountryRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateCountry"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "history": [],
+                "_id": "5e396039fd6a550e8fbb1ce3",
+                "name": "UK",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": "5e317f1313f3a1608819a573",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "145"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"91-L3olkIr38mOrzwF2MkUJmP865Yk\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Tue, 04 Feb 2020 12:14:49 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Get  Country Details",
+        "tags": [
+          "Country"
+        ],
+        "operationId": "GetCountryDetails",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetAllCountryDetail"
+              }
+            },
+            "examples": {
+              "application/json; charset=utf-8": [
+                {
+                  "history": [],
+                  "_id": "5e396018fd6a550e8fbb1cdf",
+                  "name": "USA",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "history": [],
+                  "_id": "5e396024fd6a550e8fbb1ce0",
+                  "name": "India",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "history": [],
+                  "_id": "5e39602bfd6a550e8fbb1ce1",
+                  "name": "Canada",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "history": [],
+                  "_id": "5e396032fd6a550e8fbb1ce2",
+                  "name": "Australia",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "history": [],
+                  "_id": "5e396039fd6a550e8fbb1ce3",
+                  "name": "UK",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                }
+              ]
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "746"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"2ea-sXlxo7cE9jTwEkPCuqcR3XuSlys\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Tue, 04 Feb 2020 12:16:43 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/siteKeyWords/upload": {
+      "post": {
+        "description": "",
+        "summary": "Upload Site Keywords",
+        "tags": [
+          "Site Keywords"
+        ],
+        "operationId": "UploadSiteKeywords",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "format": "file",
+            "description": ""
+          },
+          {
+            "name": "country",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UploadSiteKeywords"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "DuplicateDiscardedKeywords": 4032,
+                "NewlyAddedKeywords": 1001,
+                "PreviousKeywordsTotal": 8118
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "90"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"5a-/G7atj3ilhJ3fgmENXdltxX/mV0\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Wed, 05 Feb 2020 09:30:57 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/siteKeyWords/": {
+      "get": {
+        "description": "",
+        "summary": "SiteKeyword Listing without filter",
+        "tags": [
+          "Site Keywords"
+        ],
+        "operationId": "SiteKeywordListingwithoutfilter",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/intentKeywords/search": {
+      "get": {
+        "description": "",
+        "summary": "Listing Api for intentKeywords",
+        "tags": [
+          "Intent Keywords"
+        ],
+        "operationId": "ListingApiforintentKeywords",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ListingApiforintentKeyword"
+              }
+            },
+            "examples": {
+              "application/json; charset=utf-8": [
+                {
+                  "Trend": [
+                    "0.00,0.01,0.02,0.30,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289b9",
+                  "Keyword": "valentines day gifts for husband",
+                  "Volume": "8100",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.01"
+                  ],
+                  "SERP_Features": [
+                    "Images, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289ba",
+                  "Keyword": "valentines day quotes images",
+                  "Volume": "8100",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.02,1.00,0.00,0.00,0.00,0.00,0.00,0.01,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289bb",
+                  "Keyword": "valentines day wishes",
+                  "Volume": "8100",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.00,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Video, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289bc",
+                  "Keyword": "kiss day valentine week",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.11,1.00,0.00,0.00,0.00,0.00,0.00,0.01,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Instant Answer, Images, Site Links, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289bd",
+                  "Keyword": "valentine day 2019 date list",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.03,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Site Links, Reviews, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289be",
+                  "Keyword": "valentine day pic",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.02,0.37,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289bf",
+                  "Keyword": "valentine gift for husband",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.02,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c0",
+                  "Keyword": "valentine images",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.01,0.01,0.02,0.07,1.00,0.02,0.01,0.01,0.01,0.01,0.01,0.01"
+                  ],
+                  "SERP_Features": [
+                    "Instant Answer, Images, Reviews, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c1",
+                  "Keyword": "valentine meaning in hindi",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.01,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Site Links, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c2",
+                  "Keyword": "valentine's week 2019 list",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.01,0.01,0.01,0.06,1.00,0.01,0.01,0.01,0.01,0.01,0.01,0.01"
+                  ],
+                  "SERP_Features": [
+                    "Images, Site Links, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c3",
+                  "Keyword": "valentines day meaning",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.02,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c4",
+                  "Keyword": "valentines day pictures",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.13,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Site Links, Reviews, Video"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c5",
+                  "Keyword": "valentines week 2019",
+                  "Volume": "6600",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.04,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c6",
+                  "Keyword": "2019 valentine day list",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.01,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Video, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c7",
+                  "Keyword": "happy valentines day quotes",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c8",
+                  "Keyword": "rose day valentine week",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.13,1.00,0.01,0.00,0.00,0.00,0.00,0.01,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Site Links, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289c9",
+                  "Keyword": "valentine day 2019 list",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.01,0.11,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Reviews, Featured Snippet"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289ca",
+                  "Keyword": "valentine day chart",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.00,0.00,0.00,0.01,1.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289cb",
+                  "Keyword": "valentine day dress code 2019",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                },
+                {
+                  "Trend": [
+                    "0.01,0.01,0.01,0.04,1.00,0.01,0.01,0.01,0.01,0.01,0.01,0.00"
+                  ],
+                  "SERP_Features": [
+                    "Images, Reviews"
+                  ],
+                  "createdOn": "2020-02-05T10:15:28.29Z",
+                  "history": [],
+                  "_id": "5e3a96a92dd7f342392289cc",
+                  "Keyword": "valentine day photo",
+                  "Volume": "5400",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "project_id": "5e3941ccff2d165f6d9a14fc",
+                  "__v": 0
+                }
+              ]
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Expose-Headers": {
+                "type": "string",
+                "default": "x-access-token"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin, X-Requested-With, Content-Type, Accept"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "7759"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"1e4f-nozQucoNep6wOeUMOfE/KzhqlR4\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Thu, 06 Feb 2020 07:52:49 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/intentKeywords/upload": {
+      "post": {
+        "description": "",
+        "summary": "Upload Intent Keywords",
+        "tags": [
+          "Intent Keywords"
+        ],
+        "operationId": "UploadIntentKeywords",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "files",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "format": "file",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/swagger.json": {
+      "get": {
+        "description": "",
+        "summary": "Swagger Api",
+        "tags": [
+          "Swagger Api"
+        ],
+        "operationId": "SwaggerApi",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/filter": {
+      "post": {
+        "description": "",
+        "summary": "Add filter",
+        "tags": [
+          "Filters"
+        ],
+        "operationId": "Addfilter",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AddfilterRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Addfilter"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "volume": {
+                  "start": 0,
+                  "end": 100
+                },
+                "compitative_Position": {
+                  "start": 0,
+                  "end": 100
+                },
+                "position": {
+                  "start": 0,
+                  "end": 100
+                },
+                "tags": [
+                  "tag2,tag1,tag3"
+                ],
+                "createdOn": "2020-02-11T07:41:02.321Z",
+                "updatedOn": "2020-02-11T07:41:02.321Z",
+                "history": [],
+                "_id": "5e425aac12bf596224d7febe",
+                "name": "filter2",
+                "URL": "www.URL2.com",
+                "keyword": "key2",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": "5e317f1313f3a1608819a573",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "GET,PUT,POST,DELETE,OPTIONS"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "401"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"191-bYVCx8VRhVxCy7RWa5EnSajrRr8\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Tue, 11 Feb 2020 08:39:59 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "summary": "Update Filter",
+        "tags": [
+          "Filters"
+        ],
+        "operationId": "UpdateFilter",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "filterId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateFilterRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateFilter"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "volume": {
+                  "start": 0,
+                  "end": 100
+                },
+                "compitative_Position": {
+                  "start": 0,
+                  "end": 100
+                },
+                "position": {
+                  "start": 0,
+                  "end": 100
+                },
+                "tags": [
+                  "tag2,tag1,tag3"
+                ],
+                "createdOn": "2020-02-11T07:41:02.321Z",
+                "updatedOn": "2020-02-11T07:41:02.321Z",
+                "history": [],
+                "_id": "5e425aac12bf596224d7febe",
+                "name": "filter2",
+                "URL": "www.URL2.com",
+                "keyword": "key3",
+                "createdBy": "5e317f1313f3a1608819a573",
+                "updatedBy": "5e317f1313f3a1608819a573",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "GET,PUT,POST,DELETE,OPTIONS"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "401"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"191-0hxLK3OV2zjyJLGQdZWZ3/CZiGA\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Tue, 11 Feb 2020 08:43:07 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Get Filter",
+        "tags": [
+          "Filters"
+        ],
+        "operationId": "GetFilter",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "filterId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetFilter"
+              }
+            },
+            "examples": {
+              "application/json; charset=utf-8": [
+                {
+                  "volume": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "compitative_Position": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "position": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "tags": [
+                    "tag1"
+                  ],
+                  "createdOn": "2020-02-11T06:51:00.65Z",
+                  "updatedOn": "2020-02-11T06:51:00.65Z",
+                  "history": [],
+                  "_id": "5e424f7ac0b0b74a4f293bbd",
+                  "name": "filter1",
+                  "URL": "www.URL1.com",
+                  "keyword": "key1",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "volume": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "compitative_Position": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "position": {
+                    "start": 0,
+                    "end": 100
+                  },
+                  "tags": [
+                    "tag2,tag1,tag3"
+                  ],
+                  "createdOn": "2020-02-11T07:41:02.321Z",
+                  "updatedOn": "2020-02-11T07:41:02.321Z",
+                  "history": [],
+                  "_id": "5e425aac12bf596224d7febe",
+                  "name": "filter2",
+                  "URL": "www.URL2.com",
+                  "keyword": "key3",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                }
+              ]
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "GET,PUT,POST,DELETE,OPTIONS"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "795"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"31b-KeHet7lKN4wRA24EWvgKU59q7lU\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Tue, 11 Feb 2020 08:44:33 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "summary": "Delete Filter",
+        "tags": [
+          "Filters"
+        ],
+        "operationId": "DeleteFilter",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "filterId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/filter/search": {
+      "get": {
+        "description": "",
+        "summary": "Search api for filter_name and tags",
+        "tags": [
+          "Filters"
+        ],
+        "operationId": "Searchapiforfilter_nameandtags",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tags",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/api/targetKeywords/upload": {
+      "post": {
+        "description": "",
+        "summary": "Upload Target Keyword",
+        "tags": [
+          "Target Keyword"
+        ],
+        "operationId": "UploadTargetKeyword",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "files",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "format": "file",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/targetKeywords/search": {
+      "get": {
+        "description": "",
+        "summary": "Listing of Target Keyword",
+        "tags": [
+          "Target Keyword"
+        ],
+        "operationId": "ListingofTargetKeyword",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "Volume1",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "Volume2",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/comment/": {
+      "post": {
+        "description": "",
+        "summary": "Add comment",
+        "tags": [
+          "Comments"
+        ],
+        "operationId": "Addcomment",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AddcommentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Addcomment"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "_id": "5e44df5b33a8f505f486731f",
+                "URL": "www.talash.com",
+                "Keyword": "online cake order in dibrugarh",
+                "project_id": "5e43e6b3df95b326c7d99b0d",
+                "comments": "good cakes",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "OPTIONS,GET,PUT,POST,DELETE"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "172"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"ac-2OBscPtgo214CKV7WBMQSsu8EDk\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Thu, 13 Feb 2020 05:32:11 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Get Comment",
+        "tags": [
+          "Comments"
+        ],
+        "operationId": "GetComment",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GetComment"
+            },
+            "examples": {
+              "application/json; charset=utf-8": {
+                "_id": "5e43ebffdf95b326c7d99b0e",
+                "URL": "www.talash.com",
+                "Keyword": "online cake order in dibrugarh",
+                "project_id": "5e43e6b3df95b326c7d99b0d",
+                "comments": "good cake",
+                "__v": 0
+              }
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "OPTIONS,GET,PUT,POST,DELETE"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "171"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"ab-NHFPlGAWNzmI8H0PSLYcTULODHM\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Thu, 13 Feb 2020 05:34:09 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "description": "",
+        "summary": "Edit comment",
+        "tags": [
+          "Comments"
+        ],
+        "operationId": "Editcomment",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags": {
+      "get": {
+        "description": "",
+        "summary": "Listing of tags",
+        "tags": [
+          "Tags"
+        ],
+        "operationId": "Listingoftags",
+        "deprecated": false,
+        "produces": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Listingoftag"
+              }
+            },
+            "examples": {
+              "application/json; charset=utf-8": [
+                {
+                  "createdOn": "2020-02-11T07:40:32.29Z",
+                  "updatedOn": "2020-02-11T07:40:32.29Z",
+                  "history": [],
+                  "_id": "5e425a71bd870061d2215f3a",
+                  "name": "tag2",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "createdOn": "2020-02-11T07:40:32.29Z",
+                  "updatedOn": "2020-02-11T07:40:32.29Z",
+                  "history": [],
+                  "_id": "5e425a71bd870061d2215f3b",
+                  "name": "tag1",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "createdOn": "2020-02-11T08:38:38.548Z",
+                  "updatedOn": "2020-02-11T08:38:38.548Z",
+                  "history": [],
+                  "_id": "5e426811019f1c736c1421a2",
+                  "name": "tag3",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "createdOn": "2020-02-12T06:50:54.8Z",
+                  "updatedOn": "2020-02-12T06:50:54.8Z",
+                  "history": [],
+                  "_id": "5e43a1323e3663362e51173e",
+                  "name": "tag4",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "createdOn": "2020-02-12T06:50:54.8Z",
+                  "updatedOn": "2020-02-12T06:50:54.8Z",
+                  "history": [],
+                  "_id": "5e43a1323e3663362e51173f",
+                  "name": "tag5",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                },
+                {
+                  "createdOn": "2020-02-12T06:50:54.8Z",
+                  "updatedOn": "2020-02-12T06:50:54.8Z",
+                  "history": [],
+                  "_id": "5e43a1323e3663362e511740",
+                  "name": "tag7",
+                  "createdBy": "5e317f1313f3a1608819a573",
+                  "updatedBy": "5e317f1313f3a1608819a573",
+                  "__v": 0
+                }
+              ]
+            },
+            "headers": {
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Express"
+              },
+              "Access-Control-Allow-Origin": {
+                "type": "string",
+                "default": "*"
+              },
+              "Access-Control-Allow-Credentials": {
+                "type": "string",
+                "default": "true"
+              },
+              "Access-Control-Allow-Methods": {
+                "type": "string",
+                "default": "OPTIONS,GET,PUT,POST,DELETE"
+              },
+              "Access-Control-Allow-Headers": {
+                "type": "string",
+                "default": "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json,x-access-token"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "1357"
+              },
+              "ETag": {
+                "type": "string",
+                "default": "W/\"54d-yzuE3VcF1BufV21phDJ1yMTiHgw\""
+              },
+              "Date": {
+                "type": "string",
+                "default": "Thu, 13 Feb 2020 07:10:24 GMT"
+              },
+              "Connection": {
+                "type": "string",
+                "default": "keep-alive"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AddprojectRequest": {
+      "title": "AddprojectRequest",
+      "example": {
+        "name": "talash",
+        "siteUrl": "www.talash.com"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "siteUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "siteUrl"
+      ]
+    },
+    "Addproject": {
+      "title": "Addproject",
+      "example": {
+        "compitative_URL": [],
+        "isActive": true,
+        "isDelete": false,
+        "history": [],
+        "_id": "5e3a51d89bd84e5c5e1df9bf",
+        "name": "kajal",
+        "siteUrl": "aaaa",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "createdOn": "2020-02-05T05:25:44.777Z",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "compitative_URL": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "isDelete": {
+          "type": "boolean"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "siteUrl": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "compitative_URL",
+        "isActive",
+        "isDelete",
+        "history",
+        "_id",
+        "name",
+        "siteUrl",
+        "createdBy",
+        "updatedBy",
+        "createdOn",
+        "__v"
+      ]
+    },
+    "UpdateprojectRequest": {
+      "title": "UpdateprojectRequest",
+      "example": {
+        "name": "vinod1"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "Updateproject": {
+      "title": "Updateproject",
+      "example": {
+        "compitative_URL": [],
+        "isActive": true,
+        "isDelete": false,
+        "history": [],
+        "_id": "5e37f9fbf4ab1437fcf69e02",
+        "name": "vinod1",
+        "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": null,
+        "createdOn": "2020-02-03T10:46:19.181Z",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "compitative_URL": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "isDelete": {
+          "type": "boolean"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "siteUrl": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "compitative_URL",
+        "isActive",
+        "isDelete",
+        "history",
+        "_id",
+        "name",
+        "siteUrl",
+        "createdBy",
+        "updatedBy",
+        "createdOn",
+        "__v"
+      ]
+    },
+    "GetProjectDetails": {
+      "title": "GetProjectDetails",
+      "example": {
+        "compitative_URL": [],
+        "isActive": true,
+        "isDelete": false,
+        "history": [],
+        "_id": "5e37f9fbf4ab1437fcf69e02",
+        "name": "vinod1",
+        "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": null,
+        "createdOn": "2020-02-03T10:46:19.181Z",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "compitative_URL": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "isDelete": {
+          "type": "boolean"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "siteUrl": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "compitative_URL",
+        "isActive",
+        "isDelete",
+        "history",
+        "_id",
+        "name",
+        "siteUrl",
+        "createdBy",
+        "updatedBy",
+        "createdOn",
+        "__v"
+      ]
+    },
+    "DeleteoneProject": {
+      "title": "DeleteoneProject",
+      "example": {
+        "compitative_URL": [],
+        "isActive": true,
+        "isDelete": false,
+        "history": [],
+        "_id": "5e37f9fbf4ab1437fcf69e02",
+        "name": "vinod1",
+        "siteUrl": "https://www.google.com/search?ei=1_A3XtfgLO6L4-EPvOiomAw&q=amazon&oq=amazon&gs_l=psy-ab.3..0i131i273j0i273j0i67l7j0.2921.4768..5104...0.4..0.130.722.1j6......0....1..gws-wiz.....0..0i71j0i131j0i131i67.cEoXNJiz934&ved=0ahUKEwiXqN-1kbXnAhXuxTgGHTw0CsMQ4dUDCAs&uact=5",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": null,
+        "createdOn": "2020-02-03T10:46:19.181Z",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "compitative_URL": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "isDelete": {
+          "type": "boolean"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "siteUrl": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "compitative_URL",
+        "isActive",
+        "isDelete",
+        "history",
+        "_id",
+        "name",
+        "siteUrl",
+        "createdBy",
+        "updatedBy",
+        "createdOn",
+        "__v"
+      ]
+    },
+    "LoginapiRequest": {
+      "title": "LoginapiRequest",
+      "example": {
+        "email": "kajal@gmail.com",
+        "password": "123456"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    "Loginapi": {
+      "title": "Loginapi",
+      "example": {
+        "data": {
+          "_id": "5e317f1313f3a1608819a573",
+          "isSuperAdmin": false,
+          "isActive": true,
+          "isDelete": false,
+          "isVerified": false,
+          "firstName": "kajal",
+          "lastName": "mahapatra",
+          "email": "kajal@gmail.com",
+          "createdAt": "2020-01-29T12:48:19.829Z",
+          "updatedAt": "2020-01-29T12:48:19.829Z"
+        },
+        "msg": "OK"
+      },
+      "type": "object",
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/Data"
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "data",
+        "msg"
+      ]
+    },
+    "Data": {
+      "title": "Data",
+      "example": {
+        "_id": "5e317f1313f3a1608819a573",
+        "isSuperAdmin": false,
+        "isActive": true,
+        "isDelete": false,
+        "isVerified": false,
+        "firstName": "kajal",
+        "lastName": "mahapatra",
+        "email": "kajal@gmail.com",
+        "createdAt": "2020-01-29T12:48:19.829Z",
+        "updatedAt": "2020-01-29T12:48:19.829Z"
+      },
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "isSuperAdmin": {
+          "type": "boolean"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "isDelete": {
+          "type": "boolean"
+        },
+        "isVerified": {
+          "type": "boolean"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id",
+        "isSuperAdmin",
+        "isActive",
+        "isDelete",
+        "isVerified",
+        "firstName",
+        "lastName",
+        "email",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "CreateCountryRequest": {
+      "title": "CreateCountryRequest",
+      "example": {
+        "name": "UK"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "CreateCountry": {
+      "title": "CreateCountry",
+      "example": {
+        "history": [],
+        "_id": "5e396039fd6a550e8fbb1ce3",
+        "name": "UK",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "history",
+        "_id",
+        "name",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    },
+    "GetAllCountryDetail": {
+      "title": "GetAllCountryDetail",
+      "example": {
+        "history": [],
+        "_id": "5e396018fd6a550e8fbb1cdf",
+        "name": "USA",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "history",
+        "_id",
+        "name",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    },
+    "UploadSiteKeywords": {
+      "title": "UploadSiteKeywords",
+      "example": {
+        "DuplicateDiscardedKeywords": 4032,
+        "NewlyAddedKeywords": 1001,
+        "PreviousKeywordsTotal": 8118
+      },
+      "type": "object",
+      "properties": {
+        "DuplicateDiscardedKeywords": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "NewlyAddedKeywords": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "PreviousKeywordsTotal": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "DuplicateDiscardedKeywords",
+        "NewlyAddedKeywords",
+        "PreviousKeywordsTotal"
+      ]
+    },
+    "ListingApiforintentKeyword": {
+      "title": "ListingApiforintentKeyword",
+      "example": {
+        "Trend": [
+          "0.00,0.01,0.02,0.30,1.00,0.01,0.00,0.00,0.00,0.00,0.00,0.00"
+        ],
+        "SERP_Features": [
+          "Images, Reviews, Featured Snippet"
+        ],
+        "createdOn": "2020-02-05T10:15:28.29Z",
+        "history": [],
+        "_id": "5e3a96a92dd7f342392289b9",
+        "Keyword": "valentines day gifts for husband",
+        "Volume": "8100",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "project_id": "5e3941ccff2d165f6d9a14fc",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "Trend": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "SERP_Features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "Keyword": {
+          "type": "string"
+        },
+        "Volume": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "Trend",
+        "SERP_Features",
+        "createdOn",
+        "history",
+        "_id",
+        "Keyword",
+        "Volume",
+        "createdBy",
+        "updatedBy",
+        "project_id",
+        "__v"
+      ]
+    },
+    "AddfilterRequest": {
+      "title": "AddfilterRequest",
+      "example": {
+        "name": "filter4",
+        "tags": "tag4,tag5,tag7",
+        "URL": "www.URL3.com",
+        "keyword": "key2",
+        "volume": {
+          "start": 100,
+          "end": 0
+        },
+        "compitative_Position": {
+          "start": 100,
+          "end": 0
+        },
+        "position": {
+          "start": 100,
+          "end": 0
+        }
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "volume": {
+          "$ref": "#/definitions/Volume"
+        },
+        "compitative_Position": {
+          "$ref": "#/definitions/CompitativePosition"
+        },
+        "position": {
+          "$ref": "#/definitions/Position"
+        }
+      },
+      "required": [
+        "name",
+        "tags",
+        "URL",
+        "keyword",
+        "volume",
+        "compitative_Position",
+        "position"
+      ]
+    },
+    "Volume": {
+      "title": "Volume",
+      "example": {
+        "start": 100,
+        "end": 0
+      },
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "end": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "CompitativePosition": {
+      "title": "CompitativePosition",
+      "example": {
+        "start": 100,
+        "end": 0
+      },
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "end": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "Position": {
+      "title": "Position",
+      "example": {
+        "start": 100,
+        "end": 0
+      },
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "end": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "Addfilter": {
+      "title": "Addfilter",
+      "example": {
+        "volume": {
+          "start": 0,
+          "end": 100
+        },
+        "compitative_Position": {
+          "start": 0,
+          "end": 100
+        },
+        "position": {
+          "start": 0,
+          "end": 100
+        },
+        "tags": [
+          "tag2,tag1,tag3"
+        ],
+        "createdOn": "2020-02-11T07:41:02.321Z",
+        "updatedOn": "2020-02-11T07:41:02.321Z",
+        "history": [],
+        "_id": "5e425aac12bf596224d7febe",
+        "name": "filter2",
+        "URL": "www.URL2.com",
+        "keyword": "key2",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "volume": {
+          "$ref": "#/definitions/Volume"
+        },
+        "compitative_Position": {
+          "$ref": "#/definitions/CompitativePosition"
+        },
+        "position": {
+          "$ref": "#/definitions/Position"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "updatedOn": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "volume",
+        "compitative_Position",
+        "position",
+        "tags",
+        "createdOn",
+        "updatedOn",
+        "history",
+        "_id",
+        "name",
+        "URL",
+        "keyword",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    },
+    "UpdateFilterRequest": {
+      "title": "UpdateFilterRequest",
+      "example": {
+        "name": "filter2",
+        "tags": "tag2,tag1,tag3",
+        "URL": "www.URL2.com",
+        "keyword": "key3",
+        "volume": {
+          "start": 100,
+          "end": 0
+        },
+        "compitative_Position": {
+          "start": 100,
+          "end": 0
+        },
+        "position": {
+          "start": 100,
+          "end": 0
+        }
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "volume": {
+          "$ref": "#/definitions/Volume"
+        },
+        "compitative_Position": {
+          "$ref": "#/definitions/CompitativePosition"
+        },
+        "position": {
+          "$ref": "#/definitions/Position"
+        }
+      },
+      "required": [
+        "name",
+        "tags",
+        "URL",
+        "keyword",
+        "volume",
+        "compitative_Position",
+        "position"
+      ]
+    },
+    "UpdateFilter": {
+      "title": "UpdateFilter",
+      "example": {
+        "volume": {
+          "start": 0,
+          "end": 100
+        },
+        "compitative_Position": {
+          "start": 0,
+          "end": 100
+        },
+        "position": {
+          "start": 0,
+          "end": 100
+        },
+        "tags": [
+          "tag2,tag1,tag3"
+        ],
+        "createdOn": "2020-02-11T07:41:02.321Z",
+        "updatedOn": "2020-02-11T07:41:02.321Z",
+        "history": [],
+        "_id": "5e425aac12bf596224d7febe",
+        "name": "filter2",
+        "URL": "www.URL2.com",
+        "keyword": "key3",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "volume": {
+          "$ref": "#/definitions/Volume"
+        },
+        "compitative_Position": {
+          "$ref": "#/definitions/CompitativePosition"
+        },
+        "position": {
+          "$ref": "#/definitions/Position"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "updatedOn": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "volume",
+        "compitative_Position",
+        "position",
+        "tags",
+        "createdOn",
+        "updatedOn",
+        "history",
+        "_id",
+        "name",
+        "URL",
+        "keyword",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    },
+    "GetFilter": {
+      "title": "GetFilter",
+      "example": {
+        "volume": {
+          "start": 0,
+          "end": 100
+        },
+        "compitative_Position": {
+          "start": 0,
+          "end": 100
+        },
+        "position": {
+          "start": 0,
+          "end": 100
+        },
+        "tags": [
+          "tag1"
+        ],
+        "createdOn": "2020-02-11T06:51:00.65Z",
+        "updatedOn": "2020-02-11T06:51:00.65Z",
+        "history": [],
+        "_id": "5e424f7ac0b0b74a4f293bbd",
+        "name": "filter1",
+        "URL": "www.URL1.com",
+        "keyword": "key1",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "volume": {
+          "$ref": "#/definitions/Volume"
+        },
+        "compitative_Position": {
+          "$ref": "#/definitions/CompitativePosition"
+        },
+        "position": {
+          "$ref": "#/definitions/Position"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "createdOn": {
+          "type": "string"
+        },
+        "updatedOn": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "volume",
+        "compitative_Position",
+        "position",
+        "tags",
+        "createdOn",
+        "updatedOn",
+        "history",
+        "_id",
+        "name",
+        "URL",
+        "keyword",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    },
+    "AddcommentRequest": {
+      "title": "AddcommentRequest",
+      "example": {
+        "URL": "www.talash.com",
+        "Keyword": "online cake order in dibrugarh",
+        "project_id": "5e43e6b3df95b326c7d99b0d",
+        "comments": "good cakes"
+      },
+      "type": "object",
+      "properties": {
+        "URL": {
+          "type": "string"
+        },
+        "Keyword": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "URL",
+        "Keyword",
+        "project_id",
+        "comments"
+      ]
+    },
+    "Addcomment": {
+      "title": "Addcomment",
+      "example": {
+        "_id": "5e44df5b33a8f505f486731f",
+        "URL": "www.talash.com",
+        "Keyword": "online cake order in dibrugarh",
+        "project_id": "5e43e6b3df95b326c7d99b0d",
+        "comments": "good cakes",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "Keyword": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "_id",
+        "URL",
+        "Keyword",
+        "project_id",
+        "comments",
+        "__v"
+      ]
+    },
+    "GetComment": {
+      "title": "GetComment",
+      "example": {
+        "_id": "5e43ebffdf95b326c7d99b0e",
+        "URL": "www.talash.com",
+        "Keyword": "online cake order in dibrugarh",
+        "project_id": "5e43e6b3df95b326c7d99b0d",
+        "comments": "good cake",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "Keyword": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "_id",
+        "URL",
+        "Keyword",
+        "project_id",
+        "comments",
+        "__v"
+      ]
+    },
+    "Listingoftag": {
+      "title": "Listingoftag",
+      "example": {
+        "createdOn": "2020-02-11T07:40:32.29Z",
+        "updatedOn": "2020-02-11T07:40:32.29Z",
+        "history": [],
+        "_id": "5e425a71bd870061d2215f3a",
+        "name": "tag2",
+        "createdBy": "5e317f1313f3a1608819a573",
+        "updatedBy": "5e317f1313f3a1608819a573",
+        "__v": 0
+      },
+      "type": "object",
+      "properties": {
+        "createdOn": {
+          "type": "string"
+        },
+        "updatedOn": {
+          "type": "string"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "__v": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "createdOn",
+        "updatedOn",
+        "history",
+        "_id",
+        "name",
+        "createdBy",
+        "updatedBy",
+        "__v"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Project",
+      "description": ""
+    },
+    {
+      "name": "User",
+      "description": ""
+    },
+    {
+      "name": "Country",
+      "description": ""
+    },
+    {
+      "name": "Site Keywords",
+      "description": ""
+    },
+    {
+      "name": "Intent Keywords",
+      "description": ""
+    },
+    {
+      "name": "Swagger Api",
+      "description": ""
+    },
+    {
+      "name": "Filters",
+      "description": ""
+    },
+    {
+      "name": "Target Keyword",
+      "description": ""
+    },
+    {
+      "name": "Comments",
+      "description": ""
+    },
+    {
+      "name": "Tags",
+      "description": ""
+    }
+  ]
+}
